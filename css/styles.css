@@ -132,7 +132,6 @@ button {
 	color: var(--main-txt-cl);
 	background-color: var(--white-bg-cl);
 	transition: var(--animation);
-	
 }
 .main-nav > .list-nav .link.current {
 	font-weight: 500;
@@ -143,11 +142,9 @@ button {
 	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 	color: var(--button-cl);
-	
-	
 }
-.list-nav .link.current::after{
-    display: inline-block;
+.list-nav .link.current::after {
+	display: inline-block;
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -156,14 +153,11 @@ button {
 	bottom: -1.5%;
 	background-color: var(--button-cl);
 	border-radius: 2px;
-	
-	
 }
 
 .main-nav > .list-nav .link:hover,
 .main-nav > .list-nav .link:focus {
 	color: var(--button-cl);
-	
 }
 
 .link {
@@ -298,14 +292,39 @@ button {
 	flex-wrap: wrap;
 	margin-right: -30px;
 	margin-bottom: -30px;
+	position: relative;
 }
 .work-item {
 	margin-right: 30px;
 	margin-bottom: 30px;
 	flex-basis: calc(100% / 3 - 30px);
 }
+.work-thumb {
+	position: relative;
+}
+.work-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(47, 48, 58, 0.8);
+}
+.work-txt {
+	color: var(--white-txt-cl);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;	
+	
+	text-transform: uppercase;
+}
 
 /*team*/
+
 .team {
 	background: var(--light-bg-cl);
 }
