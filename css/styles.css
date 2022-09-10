@@ -567,14 +567,18 @@ button {
 	letter-spacing: 0.03em;
 	color: var(--white-txt-cl);
 	font-style: normal;
+	transition: color var(--animation);
 }
-.add-list {
-	margin-bottom: 9px;
-}
+
 .address-name:hover,
 .address-name:focus {
 	color: var(--button-cl);
 }
+
+.add-list {
+	margin-bottom: 9px;
+}
+
 .foot-contact {
 	font-size: 14px;
 	line-height: calc(24 / 14);
